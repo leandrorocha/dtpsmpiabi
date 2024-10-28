@@ -1,0 +1,48 @@
+:root {
+	/* Colors */
+	--primary-color: #f96702;
+	--primary-color-light: #fd8430;
+	--primary-color-extra-light: #fff0e6;
+	--primary-color-dark: #73370c;
+
+	--secondary-color: #484442;
+	--secondary-color-extra-light: #eef2f6;
+	--secondary-color-light: #abbfd3;
+	--secondary-color-dark: #201c19;
+
+	--text-color: #1e1e1e;
+	--text-color-light: #6c757d;
+
+	--color-white: #ffffff;
+	--color-black: #000000;
+	--color-dark: #1e1e1e;
+	--color-light: #eef2f6;
+	--color-light-hover: #e6e6e625;
+
+	/* Timeline Vertical */
+
+	--timeline-color-bullet-background: var(--primary-color);
+	--timeline-color-bullet-stroke: var(--color-white);
+	--timeline-color-bullet-text: var(--color-white);
+	--timeline-color-line: var(--secondary-color);
+
+	/* Exercício de Fixação */
+
+	--exercise-divider-line: var(--secondary-color-light);
+
+	--exercise-option-default: var(--color-light);
+	--exercise-option-hover: var(--primary-color);
+
+	--exercise-option-selected-background: var(--primary-color-extra-light);
+	--exercise-option-selected-text: var(--primary-color-dark);
+
+	--exercise-option-blocked: var(--text-color-light);
+
+	--exercise-option-right-stroke: var(--color-light);
+	--exercise-option-right-background: var(--color-light);
+	--exercise-option-right-feedback-text: var(--color-light);
+
+	--exercise-option-wrong-stroke: var(--color-light);
+	--exercise-option-wrong-background: var(--color-light);
+	--exercise-option-wrong-feedback-text: var(--color-light);
+}

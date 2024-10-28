@@ -1,0 +1,53 @@
+/* Buttons */
+
+.button-primary {
+	cursor: pointer;
+	display: inline-block;
+	padding: 8px 16px;
+	min-width: 120px;
+	border-radius: 4px;
+	border: 1px solid var(--primary-color);
+	background-color: var(--primary-color);
+	color: #ffffff !important;
+	text-align: center;
+	font-family: 'Roboto Condensed', sans-serif;
+	text-decoration: none;
+}
+.button-primary:hover {
+	background-color: var(--primary-color-light);
+	color: #ffffff;
+	border: 1px solid var(--primary-color-light);
+	text-decoration: none;
+}
+
+.button-primary:focus-visible {
+	text-decoration: none;
+	border: 2px solid #000000;
+	border-style: outset;
+}
+
+.button-secondary {
+	cursor: pointer;
+	display: inline-block;
+	padding: 8px 16px;
+	min-width: 120px;
+	border-radius: 4px;
+	border: 1px solid var(--primary-color);
+	background-color: transparent;
+	color: var(--primary-color);
+	text-align: center;
+	font-family: 'Roboto Condensed', sans-serif;
+	text-decoration: none !important;
+}
+.button-secondary:hover {
+	background-color: var(--primary-color-light);
+	color: #ffffff;
+	border: 1px solid var(--primary-color-light);
+	text-decoration: none;
+}
+
+.button-secondary:focus-visible {
+	text-decoration: none;
+	border: 2px solid #000000;
+	border-style: outset;
+}

@@ -1,0 +1,271 @@
+@import 'sidebar.css';
+@import 'header.css';
+@import 'footer.css';
+@import 'colors.css';
+@import 'fonts.css';
+@import 'buttons.css';
+@import 'recursos-visuais.css';
+@import 'exercise.css';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Roboto Condensed', sans-serif !important;
+	color: var(--secondary-color);
+	margin-bottom: 2rem;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+	display: block;
+	font-family: 'Roboto Condensed', sans-serif;
+	color: var(--secondary-color);
+	/* margin-bottom: 2rem !important; */
+}
+
+p {
+	font-family: 'Roboto Light', sans-serif;
+	font-weight: 300;
+	margin-bottom: 1rem;
+	line-height: 1.5;
+}
+
+a,
+a:visited {
+	color: var(--primary-color);
+	font-weight: 500;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	overflow-wrap: anywhere;
+}
+a:hover,
+a:focus {
+	color: var(--primary-color-light);
+	font-weight: 500;
+	text-decoration: underline;
+}
+
+a[target='_blank']:not(.no-after):after {
+	font-family: 'Material Symbols Rounded';
+	content: 'open_in_new';
+	vertical-align: text-bottom;
+	margin-left: 5px;
+	margin-right: 5px;
+	font-size: 80%;
+	text-decoration: none;
+}
+a[target='_blank']:after :hover {
+	text-decoration: none;
+}
+
+/* em {
+  font-family: 'Noto Sans', sans-serif;
+  font-style: italic;
+} */
+
+.caption-top {
+	caption-side: top;
+}
+
+.primary-color {
+	color: var(--primary-color);
+}
+.secondary-color {
+	color: var(--secondary-color);
+}
+.text-white {
+	color: #ffffff !important;
+}
+strong {
+	font-weight: 700;
+	font-family: 'Roboto Condensed Bold', sans-serif;
+}
+
+u {
+	font-family: inherit;
+}
+
+.figure-caption {
+	font-size: 75%;
+	color: #6c757d;
+	text-align: center;
+	margin-bottom: 0.75rem;
+}
+
+.figure-caption .fonte,
+.fonte,
+.video-subtitle {
+	font-size: 75%;
+	color: #6c757d;
+	text-align: center;
+}
+
+.figure-caption a,
+.figure-caption a:visited,
+.video-subtitle,
+.video-subtitle a,
+.video-subtitle a:visited {
+	color: #6c757d;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+body {
+	background-color: #fbfbfb;
+	font-size: 1.25rem;
+}
+
+.main {
+	position: relative;
+}
+
+/* #page-content {
+    min-height: 100vh;
+} */
+
+section {
+	padding: 40px 0;
+}
+
+section .page-nav {
+	border-top: 1px solid var(--secondary-color-light);
+	padding: 40px 0;
+	flex-direction: row;
+}
+
+section .page-nav .button-primary {
+	min-width: 30%;
+}
+
+@media (max-width: 767.1px) {
+	section .page-nav {
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 1199px) {
+	section .page-nav .button-primary {
+		min-width: 40%;
+	}
+}
+
+/* SVG Mapa do Brasil */
+svg .info .has-info {
+	cursor: pointer;
+}
+svg .info .has-info:hover .has-info--hover {
+	mix-blend-mode: color;
+}
+
+/* Créditos */
+
+#modal-creditos .h6 {
+	color: var(--primary-color);
+}
+
+/* LIghtbox */
+
+.lightbox {
+	cursor: zoom-in;
+}
+
+.lightbox::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: var(--color-black);
+	opacity: 0;
+	transition: 0.25s ease-out;
+}
+.lightbox:hover::after {
+	opacity: 0.25;
+}
+.lightbox__image {
+	position: fixed;
+	padding: 30px;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: auto;
+	z-index: 999;
+	background-color: rgba(0, 0, 0, 0.85);
+	text-align: center;
+	cursor: zoom-out;
+	object-fit: contains;
+}
+.lightbox__image img {
+	object-fit: contain;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+/* Compartilhar Cards */
+
+.share-cards__header {
+	margin: 50px 0;
+}
+.share-cards__body {
+	display: flex;
+	flex-direction: row;
+	gap: 30px;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.share-cards__content {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	justify-content: start;
+	align-items: center;
+	text-align: center;
+}
+@media (min-width: 768px) {
+	.share-cards__content {
+		display: flex;
+		flex-direction: row;
+		gap: 20px;
+		justify-content: start;
+		align-items: start;
+	}
+}
+.share-cards__image {
+	position: relative;
+	width: 120px;
+	height: 120px;
+	overflow: hidden;
+	background-color: var(--primary-color-extra-light);
+	text-align: center;
+	border-radius: 8px;
+}
+.share-cards__image img {
+	height: 100%;
+	width: auto;
+}
+
+/* Iframe e Vídeos */
+
+iframe,
+video {
+	border: 1px solid #999ea5 !important;
+	border-radius: 0.75rem;
+	background-color: #999ea5;
+}
