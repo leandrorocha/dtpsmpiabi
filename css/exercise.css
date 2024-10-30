@@ -16,6 +16,8 @@
 	list-style-type: none;
 	margin: 0;
 }
+
+.question-container, 
 .mcq-card .mcq__answers ul li {
 	padding: 10px 20px;
 	margin-bottom: 20px;
@@ -121,6 +123,6 @@
 
 
 .question-container { margin-bottom: 20px; }
-.feedback { display: none; font-size: 0.9em; color: #555; margin-top: 5px; }
-.button { padding: 10px 15px; cursor: pointer; }
-.disabled { background-color: #ccc; cursor: not-allowed; }
+        .feedback { display: none; font-size: 0.9em; color: #555; margin-top: 5px; }
+        .button { padding: 10px 15px; cursor: pointer; }
+        .disabled { background-color: #ccc; cursor: not-allowed; }

@@ -137,9 +137,10 @@ document.getElementById("questionnaire").addEventListener("change", () => {
 submitButton.addEventListener("click", () => {
 	if (submitButton.classList.contains("disabled")) return;
 
-	let allCorrect = true;
 	const questions = document.querySelectorAll(".question-container");
+	let allCorrect = true;
 
+	// Verificar respostas e exibir feedback
 	questions.forEach((question, index) => {
 		const selectedAnswer = document.querySelector(`input[name="question${index}"]:checked`).value;
 		const correctAnswer = question.getAttribute("data-answer");
@@ -149,8 +150,19 @@ submitButton.addEventListener("click", () => {
 		if (selectedAnswer !== correctAnswer) {
 			allCorrect = false;
 		}
+		
+		// Bloquear todas as respostas
+		const inputs = question.querySelectorAll("input[type='radio']");
+		inputs.forEach(input => input.disabled = true);
 	});
 
-	submitButton.innerText = allCorrect ? "Parabéns, todas as respostas estão corretas!" : "Recomeçar";
-	if (!allCorrect) submitButton.classList.add("disabled");
+	// Mudar o texto do botão para "Recomeçar" se tiver erros, e adicionar evento para recomeçar
+	if (allCorrect) {
+		submitButton.innerText = "Parabéns, todas as respostas estão corretas!";
+		submitButton.classList.add("disabled");
+	} else {
+		submitButton.innerText = "Recomeçar";
+		submitButton.classList.add("disabled");
+		submitButton.onclick = () => location.reload();
+	}
 });
