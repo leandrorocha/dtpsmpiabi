@@ -107,7 +107,8 @@
 									<div class="card-body p-4">
 										<p>Olá!</p>
 										<p>Seja bem-vindo, seja bem-vinda ao curso Detecção, Tratamento e Promoção da
-											Saúde Mental para populações indígenas na Atenção Básica e Saúde Indígena.</p>
+											Saúde Mental para populações indígenas na Atenção Básica e Saúde Indígena.
+										</p>
 										<p>Este curso foi pensado com o objetivo ...</p>
 										<p>O curso está dividido em 3 módulos, onde você terá acesso a :</p>
 										<div class="obj-lista">
@@ -208,7 +209,7 @@
 											</div>
 										</div>
 										<div class="card-footer">
-											<a href="#" class="button-primary">Acessar Módulo
+											<a href="modulo2/aula1/apresentacao.html" class="button-primary">Acessar Módulo
 												2</a>
 										</div>
 									</div>
@@ -252,8 +253,6 @@
 							<button class="button-secondary" data-toggle="modal" data-target="#modalCreditos"
 								id="openModalBtn"><span class="material-symbols-rounded">list</span>
 								Créditos</button>
-
-							<div id="modalContainer"></div>
 						</div>
 					</div>
 				</div>
@@ -309,6 +308,27 @@
 		</footer>
 	</div>
 
+	<!-- Modal -->
+	<div class="modal fade" id="modalCreditos" tabindex="-1" role="dialog" aria-labelledby="Créditos"
+		aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<span class="modal-title h5" id="modal-creditos">Créditos</span>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<!--conteúdo-->
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="button-primary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<!-- Option 2: Separate Popper and Bootstrap JS -->
 	<!-- <script src="bootstrap-4.6.2-dist/js/jquery-3.5.1.slim.min.js"></script> -->
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -321,9 +341,9 @@
 		$(document).ready(function () {
 			$("#openModalBtn").click(function () {
 				$.get("modal-creditos.html", function (data) {
-					$("#modalContainer").html(data);
+					$(".modal-body").html(data);
 				}).fail(function () {
-					$("#modalContainer").html("<p>Erro ao carregar os créditos.</p>");
+					$(".modal-body").html("<p>Erro ao carregar os créditos.</p>");
 				});
 			});
 		});

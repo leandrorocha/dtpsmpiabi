@@ -4,9 +4,14 @@ const headerTitleLabel = document.querySelector('.header__title div div div:firs
 const headerTitle = document.querySelector('.header__title div div div:last-child');
 
 function animate(element, type, delay) {
+	if (!element) {
+	  return;
+	}
+  
 	element.classList.add('animate__animated', 'animate__' + type);
 	element.style.animationDelay = delay;
-}
+  }
+  
 
 animate(headerTitleLabel, 'fadeIn', '0.2s');
 animate(headerTitle, 'fadeIn', '0.5s');
@@ -24,11 +29,11 @@ const options = {
 const observerCards = new IntersectionObserver(function (entries, observer) {
 	entries.forEach(entry => {
 		if (entry.isIntersecting) {
-			// console.log(entry.target)
+			// .log(entry.target)
 			entry.target.classList.add('card--in');
 			entry.target.classList.remove('card--out');
 		} else {
-			// console.log(entry.target)
+			// .log(entry.target)
 			entry.target.classList.remove('card--in');
 			entry.target.classList.add('card--out');
 		}
@@ -52,7 +57,7 @@ const optionsTimeline = {
 const observerTimeline = new IntersectionObserver(function (entries, optionsTimeline) {
 	entries.forEach(entry => {
 		if (entry.isIntersecting) {
-			//console.log(entry.target)
+			//.log(entry.target)
 			entry.target.classList.add('animate__animated');
 
 			if (entry.target.classList.contains('bounce-left')) {
