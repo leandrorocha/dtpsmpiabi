@@ -121,9 +121,7 @@ let mcqCard = document.querySelectorAll('.mcq-card');
 	});
 })();
 
-
-
-// EXERCICIOS DE V ou F
+/** QUESTIONARIO V  OU  F */
 const submitButton = document.getElementById("submitButton");
 
 // Habilitar o botão somente quando todas as perguntas forem respondidas
@@ -147,8 +145,14 @@ submitButton.addEventListener("click", () => {
 		const feedbackEl = question.querySelector(".feedback");
 		feedbackEl.style.display = "block"; // Exibe o feedback
 
+		// Remove estilos prévios de resposta
+		question.classList.remove("incorrect", "correct");
+
 		if (selectedAnswer !== correctAnswer) {
 			allCorrect = false;
+			question.classList.add("incorrect"); // Adiciona estilo de erro
+		} else {
+			question.classList.add("correct"); // Adiciona estilo correto
 		}
 		
 		// Bloquear todas as respostas
@@ -156,13 +160,35 @@ submitButton.addEventListener("click", () => {
 		inputs.forEach(input => input.disabled = true);
 	});
 
-	// Mudar o texto do botão para "Recomeçar" se tiver erros, e adicionar evento para recomeçar
+	// Mudar o texto do botão para "Recomeçar" se tiver erros, e redefinir o formulário
 	if (allCorrect) {
 		submitButton.innerText = "Parabéns, todas as respostas estão corretas!";
 		submitButton.classList.add("disabled");
 	} else {
 		submitButton.innerText = "Recomeçar";
-		submitButton.classList.add("disabled");
-		submitButton.onclick = () => location.reload();
+		submitButton.onclick = () => resetForm();
 	}
 });
+
+// Função para redefinir o formulário para o estado inicial
+function resetForm() {
+	const questions = document.querySelectorAll(".question-container");
+	questions.forEach(question => {
+		// Oculta o feedback e remove os estilos de resposta
+		question.querySelector(".feedback").style.display = "none";
+		question.classList.remove("correct", "incorrect");
+
+		// Desmarca as seleções e habilita as opções
+		const inputs = question.querySelectorAll("input[type='radio']");
+		inputs.forEach(input => {
+			input.checked = false;
+			input.disabled = false;
+		});
+	});
+
+	// Resetar o botão de envio para o estado inicial
+	submitButton.innerText = "Responder";
+	submitButton.classList.add("disabled");
+	submitButton.onclick = null; // Remove o evento de redefinir para evitar múltiplos resets
+}
+
