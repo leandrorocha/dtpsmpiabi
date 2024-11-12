@@ -1224,7 +1224,7 @@ Listas
 
 /*Quando há lista dentro de lista:*/
 .list-group-item ul li {
-	list-style: none;
+	list-style: circle;
 	display: list-item;
 	margin-left: 2.2rem;
 }
