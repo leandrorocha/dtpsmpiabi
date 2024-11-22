@@ -3100,3 +3100,24 @@ ANIMATIONS
 	opacity: 0;
 	/* box-shadow: none !important; */
 }
+
+
+.circle-icon {
+	width: 80px;
+	height: 80px;
+	background-color: #FFFFFF;
+	border: 3px solid #4a9f9b;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto 1em;
+  }
+  .circle-icon i {
+	font-size: 2rem;
+	color: #4a9f9b;
+  }
+  .factor-item {
+	text-align: center;
+	margin-bottom: 30px;
+  }

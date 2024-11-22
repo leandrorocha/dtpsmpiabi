@@ -60,6 +60,9 @@
 	<!-- Project CSS -->
 	<link rel="stylesheet" href="../../css/style.css" />
 
+	<!-- Font Awesome -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
 	<style>
 		.arrow {
 			display: inline-block;
@@ -112,7 +115,7 @@
 
 						<a href="topico3.html" tabindex="0" role="link" class="sidebar__btn sidebar__list-item"><span
 								class="material-symbols-rounded" aria-label="Tópico não concluído"></span>Tópico 3 -
-							Juventude</a>
+							Saúde Mental da Juventude</a>
 
 						<a href="resumo.html" tabindex="0" role="link" class="sidebar__btn sidebar__list-item"><span
 								class="material-symbols-rounded" aria-label="Tópico não concluído"></span>Resumo do
@@ -228,24 +231,18 @@
 									<div class="box-title">
 										<span class="h4">
 											<span class="box-title__icone material-symbols-rounded"
-												aria-hidden="true">zoom_in</span>
+												aria-hidden="true">question_mark</span>
 											Saiba mais...
 										</span>
 										<div class="boxes-content">
-											<p><strong>Bem Viver – um novo caminho, Conselho
-													Indigenista Missionário (Cimi)
-												</strong></p>
-											<div
-												class="embed-responsive embed-responsive-16by9 mt-5">
-												<iframe width="560" height="315"
-													src="https://www.youtube.com/embed/FGyrSqiFWto"
-													title="YouTube video player" frameborder="0"
-													allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-													allowfullscreen></iframe>
-											</div>
-
-											<div class="video-subtitle">
-												<p class="mb-0 text-center">Fonte: Youtube</p>
+											<div class="obj-lista">
+												<ul class="list-group">
+													<li class="list-group-item" list-style="video">
+														<a href="https://www.youtube.com/watch?v=FGyrSqiFWto"
+															target="_blank" rel="noopener noreferrer">Bem Viver – um
+															novo caminho, Conselho Indigenista Missionário (Cimi)</a>
+													</li>
+												</ul>
 											</div>
 										</div>
 									</div>
@@ -336,34 +333,99 @@
 										saúde mental:</h4>
 								</div>
 
-								<!-- Lista Simples -->
-								<div class="obj-lista mt-5">
-									<ul class="list-group">
-										<li class="list-group-item mb-3" list-style="default">Fatores genéticos</li>
-										<li class="list-group-item mb-3" list-style="default">Educação de baixa
-											qualidade</li>
-										<li class="list-group-item mb-3" list-style="default">Uso de álcool e outras
-											drogas</li>
-										<li class="list-group-item mb-3" list-style="default">Alimentação</li>
-										<li class="list-group-item mb-3" list-style="default">Obesidade e outros riscos
-											metabólicos</li>
-										<li class="list-group-item mb-3" list-style="default">Doenças crônicas</li>
-										<li class="list-group-item mb-3" list-style="default">Deficiência de vitamina D
-										</li>
-										<li class="list-group-item mb-3" list-style="default">Distúrbios corporais e de
-											imagem</li>
-										<li class="list-group-item mb-3" list-style="default">Distúrbios do sono</li>
-										<li class="list-group-item mb-3" list-style="default">Complicação durante o
-											parto</li>
-										<li class="list-group-item mb-3" list-style="default">Abuso e violência sexual
-										</li>
-										<li class="list-group-item mb-3" list-style="default">Negligência e abuso físico
-											e emocional</li>
-										<li class="list-group-item mb-3" list-style="default">Uso de substâncias
-											psicoativas pela mãe durante a gravidez</li>
-									</ul>
+								<div class="row">
+									<!-- Item 1 -->
+									<div class="col-md-4 factor-item">
+										<div class="circle-icon">
+											<i class="fas fa-dna"></i>
+										</div>
+										<p>Fatores genéticos</p>
+									</div>
+									<!-- Item 2 -->
+									<div class="col-md-4 factor-item">
+										<div class="circle-icon">
+											<i class="fas fa-book"></i>
+										</div>
+										<p>Educação de baixa qualidade</p>
+									</div>
+									<!-- Item 3 -->
+									<div class="col-md-4 factor-item">
+										<div class="circle-icon">
+											<i class="fas fa-wine-bottle"></i>
+										</div>
+										<p>Uso de álcool e outras drogas</p>
+									</div>
+									<!-- Item 4 -->
+									<div class="col-md-4 factor-item">
+										<div class="circle-icon">
+											<i class="fas fa-utensils"></i>
+										</div>
+										<p>Alimentação</p>
+									</div>
+									<!-- Item 5 -->
+									<div class="col-md-4 factor-item">
+										<div class="circle-icon">
+											<i class="fas fa-weight"></i>
+										</div>
+										<p>Obesidade e outros riscos metabólicos</p>
+									</div>
+									<!-- Item 6 -->
+									<div class="col-md-4 factor-item">
+										<div class="circle-icon">
+											<i class="fas fa-heartbeat"></i>
+										</div>
+										<p>Doenças crônicas</p>
+									</div>
+									<!-- Item 7 -->
+									<div class="col-md-4 factor-item">
+										<div class="circle-icon">
+											<i class="fas fa-sun"></i>
+										</div>
+										<p>Deficiência de vitamina D</p>
+									</div>
+									<!-- Item 8 -->
+									<div class="col-md-4 factor-item">
+										<div class="circle-icon">
+											<i class="fas fa-user-alt-slash"></i>
+										</div>
+										<p>Distúrbios corporais e de imagem</p>
+									</div>
+									<!-- Item 9 -->
+									<div class="col-md-4 factor-item">
+										<div class="circle-icon">
+											<i class="fas fa-bed"></i>
+										</div>
+										<p>Distúrbios do sono</p>
+									</div>
+									<!-- Item 10 -->
+									<div class="col-md-4 factor-item">
+										<div class="circle-icon">
+											<i class="fas fa-baby"></i>
+										</div>
+										<p>Complicação durante o parto</p>
+									</div>
+									<!-- Item 11 -->
+									<div class="col-md-4 factor-item">
+										<div class="circle-icon">
+											<i class="fas fa-hand-holding-heart"></i>
+										</div>
+										<p>Abuso e violência sexual</p>
+									</div>
+									<!-- Item 12 -->
+									<div class="col-md-4 factor-item">
+										<div class="circle-icon">
+											<i class="fas fa-user-slash"></i>
+										</div>
+										<p>Negligência e abuso físico e emocional</p>
+									</div>
+									<!-- Item 13 -->
+									<div class="col-md-4 factor-item">
+										<div class="circle-icon">
+											<i class="fas fa-smoking"></i>
+										</div>
+										<p>Uso de substâncias psicoativas pela mãe durante a gravidez</p>
+									</div>
 								</div>
-								<!-- Fim de Lista Simples -->
 							</div>
 						</div>
 
@@ -440,7 +502,8 @@
 							<div class="col-12 col-md-10 col-lg-8">
 								<p>O humor depressivo varia pouco de dia para dia ou segundo as circunstâncias
 									e pode se acompanhar de sintomas ditos “somáticos”, como perda de interesse
-									ou prazer, despertar matinal precoce, várias horas antes da hora habitual de
+									ou prazer, despertar matinal precoce (ou seja, acordar várias horas antes do horário
+									habitual), várias horas antes da hora habitual de
 									despertar, agravamento matinal da depressão, lentidão psicomotora
 									importante, agitação, perdas de apetite, peso e libido. O número e a gravidade
 									dos sintomas permitem determinar três graus de um episódio depressivo: leve,
@@ -744,7 +807,6 @@
 
 						<div class="row justify-content-center my-3">
 							<div class="col-12 col-md-10 col-lg-8">
-
 								<p>Segundo o Anuário Brasileiro de Segurança Pública, do Fórum Brasileiro de Segurança
 									Pública, divulgado em 2023, houve 16.262 registros de suicídio no Brasil no ano de
 									2022.</p>
@@ -753,10 +815,18 @@
 									registrou
 									7,2 homicídios por 100 mil habitantes.</p>
 
-								<p class="ml-5"><strong>Além disso, podemos olhar esses indicadores de forma
-										interseccional.</strong></p>
-
-								<p class="ml-5"><strong>Mas primeiro... o que seria interseccionalidade?</strong></p>
+								<p class="mt-5">Todos estamos suscetíveis de termos esses agravos em saúde mental
+									apresentados. No
+									entanto, sabe-se que eles podem ser mais prevalentes em grupos historicamente
+									vulnerabilizados. Nisso reside a importância de identificarmos esses agravos nos
+									jovens indígenas, uma vez que eles pertencem a esses grupos.</p>
+								<p>Para compreendermos melhor sobre os impactos desses agravos nos jovens indígenas e
+									nos demais grupos historicamente vulnerabilizados, é fundamental que observemos as
+									interseccionalidades.</p>
+								<p class="mt-5"><strong>Mas você sabe o que são interseccionalidades? E como elas
+										impactam na saúde
+										mental
+										dos jovens indígenas? Vamos aprender no tópico 2!</strong></p>
 							</div>
 						</div>
 					</div>
@@ -987,6 +1057,13 @@
 											<a href="https://www.youtube.com/live/xsYMUBn-z_s?si=15cHI4hSIiwwjHuY"
 												target="_blank"
 												rel="noopener noreferrer">https://www.youtube.com/live/xsYMUBn-z_s?si=15cHI4hSIiwwjHuY</a>
+										</li>
+										<li class="list-group-item">
+											<strong>Rigoberta Menchú: Hacia una vida en plenitud</strong>, Fundación de
+											Estudios, Acción
+											y Participación Social (Fedaeps) Equador. Disponível em:
+											<a href="https://www.youtube.com/watch?v=vsVM3TzK_dU" target="_blank"
+												rel="noopener noreferrer">https://www.youtube.com/watch?v=vsVM3TzK_dU</a>
 										</li>
 									</ul>
 								</div>
