@@ -1,7 +1,7 @@
 .header {
-	background-image: url(../images/header-tarja.jpg);
+	background-image: url(../images/page-bg.png);
+	background-color: var(--primary-color-light);
 	height: 350px;
-	background-repeat: no-repeat;
 	background-position: center center;
 	position: relative;
 	margin-bottom: 30px;
@@ -33,7 +33,7 @@
 }
 .header__title h2 span {
 	display: block;
-	font-family: 'Patrick Hands', 'Roboto', sans-serif;
+	font-family: 'Chelsea Market', 'Roboto', sans-serif;
 	margin-bottom: 1rem;
 	color: #ffffff;
 	font-weight: 400;

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+
 /* Google Material Symbols */
 
 @font-face {
@@ -35,13 +37,12 @@
 	src: url(../fonts/bootstrap-icons.woff);
 }
 
-/* Patrick Hands */
+/* Chelsea Market - Google Fonts */
 
 @font-face {
-	font-family: 'Patrick Hands';
-	font-style: normal;
-	font-weight: 400;
-	src: url('../fonts/PatrickHand-Regular.ttf');
+	font-family: 'Chelsea Market', system-ui;
+  	font-weight: 400;
+  	font-style: normal;
 }
 
 /* Roboto Condensed */
