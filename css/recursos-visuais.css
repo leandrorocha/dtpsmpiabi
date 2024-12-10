@@ -6,6 +6,33 @@
 #page-content {
   position: relative;
 }
+#page-content:before {
+	content: '';
+	background: url(../images/page-content-bg1.png);
+	background-repeat: space;
+	width: 500px;
+	max-width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0%;
+	z-index: -1;
+	opacity: 0.5;
+}
+#page-content:after {
+	content: '';
+	display: block;
+	background: url(../images/page-content-bg2.png);
+	background-repeat: space;
+	width: 500px;
+	max-width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0%;
+	z-index: -1;
+	opacity: 0.5;
+}
 @media (min-width: 1600px) {
   #page-content:before {
     opacity: 1;
@@ -121,6 +148,7 @@ pre {
 }
 
 .heading__block .heading__before {
+<<<<<<< HEAD
   display: block;
   font-size: 1.5rem;
   font-family: "Chelsea Market", "Roboto", sans-serif;
@@ -128,6 +156,15 @@ pre {
   line-height: 1;
   color: var(--secondary-color);
   margin-bottom: 1rem;
+=======
+	display: block;
+	font-size: 1.5rem;
+	font-family: 'Patrick Hands', 'Roboto', sans-serif;
+	text-transform: uppercase;
+	line-height: 1;
+	color: var(--secondary-color);
+	margin-bottom: 1rem;
+>>>>>>> parent of 56581ab (Ajustes de layout)
 }
 .heading__block .heading__before::after {
   content: url(../images/head-block-line-small.svg);
@@ -219,12 +256,22 @@ Accordion
 }
 
 .accordion .accordion__header a {
+<<<<<<< HEAD
   color: var(--primary-color);
   text-decoration: none !important;
   padding-right: 60px;
   font-size: 1.25rem;
   text-transform: uppercase;
   line-height: 1.25;
+=======
+	color: var(--primary-color);
+	text-decoration: none !important;
+	padding-right: 60px;
+	font-family: 'Patrick Hands';
+	font-size: 1.25rem;
+	text-transform: uppercase;
+	line-height: 1.25;
+>>>>>>> parent of 56581ab (Ajustes de layout)
 }
 
 /* --------------------------------
@@ -364,6 +411,7 @@ Cards de Comparação e Diferenciação
 
 -------------------------------- */
 .card .card-header {
+<<<<<<< HEAD
   margin: 0;
   padding: 0 0 20px 0;
   font-family: "Chelsea Market", sans-serif;
@@ -371,6 +419,15 @@ Cards de Comparação e Diferenciação
   border-bottom: 1px solid #bfb5af;
   text-transform: uppercase;
   background: transparent;
+=======
+	margin: 0;
+	padding: 0 0 20px 0;
+	font-family: 'Patrick Hands', sans-serif;
+	font-size: 1.5rem;
+	border-bottom: 1px solid #bfb5af;
+	text-transform: uppercase;
+	background: transparent;
+>>>>>>> parent of 56581ab (Ajustes de layout)
 }
 .card-comparacao .item,
 .card-diferenciacao .item {
@@ -512,10 +569,17 @@ Destaques
 /*Olho de texto*/
 
 .olho-de-texto p {
+<<<<<<< HEAD
   color: var(--primary-color);
   font-size: 2rem;
   font-family: "Chelsea Market", sans-serif;
   text-align: center;
+=======
+	color: var(--primary-color);
+	font-size: 2rem;
+	font-family: 'Patrick Hands', sans-serif;
+	text-align: center;
+>>>>>>> parent of 56581ab (Ajustes de layout)
 }
 
 .olho-de-texto p:last-child {
@@ -541,6 +605,7 @@ Destaques
   position: relative;
 }
 .box-title .h4 {
+<<<<<<< HEAD
   padding-bottom: 20px;
   border-bottom: 1px solid #bfb5af;
   margin-bottom: 20px;
@@ -550,6 +615,17 @@ Destaques
   font-family: "Chelsea Market";
   font-size: 1.5rem;
   text-transform: uppercase;
+=======
+	padding-bottom: 20px;
+	border-bottom: 1px solid #bfb5af;
+	margin-bottom: 20px;
+	display: block;
+	/* font-weight: 500; */
+	color: var(--secondary-color-dark);
+	font-family: 'Patrick Hands';
+	font-size: 1.5rem;
+	text-transform: uppercase;
+>>>>>>> parent of 56581ab (Ajustes de layout)
 }
 .box-title .boxes-content p {
   font-size: 1.25rem;
@@ -881,10 +957,17 @@ audio::-webkit-media-controls-toggle-closed-captions-button */
   background-position: 50% 0;
   background-repeat: no-repeat;
 }
+<<<<<<< HEAD
 .page-title-parallax[data-parallax="light"] p {
   font-family: "Chelsea Market", sans-serif;
   font-size: 2rem;
   color: var(--secondary-color);
+=======
+.page-title-parallax[data-parallax='light'] p {
+	font-family: 'Patrick Hands', sans-serif;
+	font-size: 2rem;
+	color: var(--secondary-color);
+>>>>>>> parent of 56581ab (Ajustes de layout)
 }
 
 /*Fundos de destaques*/
@@ -1021,8 +1104,13 @@ Flipcards 2.0
 }
 
 .flip-card-front .card-title {
+<<<<<<< HEAD
   font-family: "Chelsea Market";
   color: #000;
+=======
+	font-family: 'Patrick Hands';
+	color: #000;
+>>>>>>> parent of 56581ab (Ajustes de layout)
 }
 
 .flip-card-front .card-text {
@@ -1168,6 +1256,7 @@ Listas
 }
 
 .obj-lista ul.list-group .list-group-item:before {
+<<<<<<< HEAD
   font-family: "Material Symbols Rounded";
   content: "label_important";
   color: var(--primary-color);
@@ -1175,6 +1264,15 @@ Listas
   margin-right: 10px;
   font-size: 120%;
   font-weight: 300;
+=======
+	font-family: 'Material Symbols Rounded';
+	content: 'label_important';
+	color: var(--primary-color);
+	vertical-align: middle;
+	margin-right: 10px;
+	font-size: 120%;
+	font-weight: 300;
+>>>>>>> parent of 56581ab (Ajustes de layout)
 }
 
 .obj-lista ul.list-group .list-group-item.text-white:before {
@@ -1323,10 +1421,17 @@ Modal
 -----------------------------------------------------------------*/
 
 .modal .modal-title {
+<<<<<<< HEAD
   margin-top: 0;
   font-family: "Chelsea Market", sans-serif;
   font-size: 1.5rem;
   text-transform: uppercase;
+=======
+	margin-top: 0;
+	font-family: 'Patrick Hands', sans-serif;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+>>>>>>> parent of 56581ab (Ajustes de layout)
 }
 
 .modal .modal-body {
@@ -1348,8 +1453,13 @@ Popover
 }
 
 .popover-header {
+<<<<<<< HEAD
   font-family: "Chelsea Market", sans-serif;
   text-transform: uppercase;
+=======
+	font-family: 'Patrick Hands', sans-serif;
+	text-transform: uppercase;
+>>>>>>> parent of 56581ab (Ajustes de layout)
 }
 
 /* -------------------------------- 
@@ -1881,7 +1991,11 @@ Timeline
 
 .cd-timeline__content .h4,
 .cd-timeline__content .h5 {
+<<<<<<< HEAD
   font-family: "Chelsea Market" !important;
+=======
+	font-family: 'Patrick Hands' !important;
+>>>>>>> parent of 56581ab (Ajustes de layout)
 }
 
 /* .cd-timeline__content img {
