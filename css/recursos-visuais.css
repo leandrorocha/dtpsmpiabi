@@ -1359,13 +1359,14 @@ Slider
 -------------------------------- */
 
 /* .carousel {margin-bottom: 30px;} */
-
 .carousel-indicators {
-  margin-bottom: 0;
+  bottom: -50px;
 }
 
 .carousel-indicators .active {
-  background-color: var(--primary-color-light);
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  background-clip: border-box;
 }
 
 .carousel-indicators.somente-img .active {
@@ -1373,7 +1374,15 @@ Slider
 }
 
 .carousel-indicators li {
-  background-color: var(--color-dark);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid var(--color-dark);
+  opacity: 1;
+}
+
+.carousel-indicators > li {
+  border-radius: 50%;
 }
 
 .carousel ul {
@@ -1565,12 +1574,16 @@ Slider
   left: -20px;
 }
 
+.carousel-item {
+  margin-bottom: 10px;;
+}
+
 .carousel-item p {
-	color: var(--primary-color-light);
-	text-align: center;
-	font-family: "Roboto Condensed", sans-serif;
-	text-transform: uppercase;
-	font-weight: 700;
+  color: var(--primary-color-light);
+  text-align: left;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 @media (min-width: 768px) {
@@ -3194,7 +3207,7 @@ ANIMATIONS
 }
 
 .custom-text a {
-	color: #fff!important;
+  color: #fff !important;
 }
 
 /* Responsividade: Alinhar texto abaixo da imagem em telas pequenas */
@@ -3205,17 +3218,17 @@ ANIMATIONS
   }
 
   .custom-text {
-	width: 100%;
+    width: 100%;
     margin-top: 20px;
     left: 0;
   }
 }
 
 .bloco-listagem {
-	background-color: #d7dac6;
+  background-color: #d7dac6;
 }
 
 .bloco-oms {
-	background-color: var(--primary-color-light);
-	color: #FFFFFF;
+  background-color: var(--primary-color-light);
+  color: #ffffff;
 }
