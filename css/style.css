@@ -265,7 +265,5 @@ svg .info .has-info:hover .has-info--hover {
 
 iframe,
 video {
-	border: 1px solid #999ea5 !important;
 	border-radius: 0.75rem;
-	background-color: #999ea5;
 }

@@ -82,11 +82,38 @@ imageToLightbox.forEach(image => {
 });
 
 // Accordion Scroll to Selected Item
-
 const accordions = document.querySelectorAll('.accordion__header > a');
 
 accordions.forEach(accordion => {
 	accordion.addEventListener('show.bs.collapse', function () {
 		console.log('fechou');
+	});
+});
+
+
+// Recurso Icones Interativos - Modulo 1 - Topico 3
+document.addEventListener("DOMContentLoaded", () => {
+	const icons = document.querySelectorAll(".container-icon");
+  
+	icons.forEach(icon => {
+		icon.addEventListener("click", () => {
+			const targetId = icon.getAttribute("data-target");
+			const targetText = document.getElementById(targetId);
+  
+			// Alterna o estado do ícone clicado
+			const isOpen = targetText.style.display === "flex";
+  
+			if (isOpen) {
+				// Fecha o texto e retorna ao estado inicial
+				targetText.style.display = "none";
+				icon.classList.remove("selected");
+				icon.querySelector("img").src = icon.getAttribute("data-default");
+			} else {
+				// Abre o texto e aplica o estado selecionado
+				targetText.style.display = "flex";
+				icon.classList.add("selected");
+				icon.querySelector("img").src = icon.getAttribute("data-selected");
+			}
+		});
 	});
 });
